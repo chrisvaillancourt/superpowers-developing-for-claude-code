@@ -36,6 +36,7 @@ Use this skill when:
 | Configuration options | `settings.md` |
 | Web-based Claude Code | `claude-code-on-the-web.md` |
 | Desktop app | `desktop.md` |
+| Chrome extension | `chrome.md` |
 | Sandboxing/security | `sandboxing.md` |
 | Slack integration | `slack.md` |
 
@@ -51,9 +52,11 @@ references/
 ├── common-workflows.md      # Common usage patterns
 ├── claude-code-on-the-web.md # Web-based Claude Code
 ├── desktop.md               # Desktop application
+├── chrome.md                # Chrome extension
 ├── plugins.md               # Plugin development
 ├── plugins-reference.md     # Plugin API reference
 ├── plugin-marketplaces.md   # Plugin marketplaces
+├── discover-plugins.md      # Plugin discovery
 ├── skills.md                # Skill creation
 ├── mcp.md                   # MCP server integration
 ├── hooks.md                 # Hooks overview

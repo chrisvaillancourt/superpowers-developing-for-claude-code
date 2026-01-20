@@ -6,35 +6,55 @@
 
 Prerequisites:
 
-* A [Claude.ai](https://claude.ai) (recommended) or [Claude Console](https://console.anthropic.com/) account
+* A [Claude subscription](https://claude.com/pricing) (Pro, Max, Teams, or Enterprise) or [Claude Console](https://console.anthropic.com/) account
 
 **Install Claude Code:**
 
+To install Claude Code, use one of the following methods:
+
 <Tabs>
-  <Tab title="macOS/Linux">
+  <Tab title="Native Install (Recommended)">
+    **macOS, Linux, WSL:**
+
     ```bash  theme={null}
     curl -fsSL https://claude.ai/install.sh | bash
     ```
-  </Tab>
 
-  <Tab title="Homebrew">
-    ```bash  theme={null}
-    brew install --cask claude-code
-    ```
-  </Tab>
+    **Windows PowerShell:**
 
-  <Tab title="Windows">
     ```powershell  theme={null}
     irm https://claude.ai/install.ps1 | iex
     ```
-  </Tab>
 
-  <Tab title="NPM">
-    ```bash  theme={null}
-    npm install -g @anthropic-ai/claude-code
+    **Windows CMD:**
+
+    ```batch  theme={null}
+    curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
     ```
 
-    Requires [Node.js 18+](https://nodejs.org/en/download/)
+    <Info>
+      Native installations automatically update in the background to keep you on the latest version.
+    </Info>
+  </Tab>
+
+  <Tab title="Homebrew">
+    ```sh  theme={null}
+    brew install --cask claude-code
+    ```
+
+    <Info>
+      Homebrew installations do not auto-update. Run `brew upgrade claude-code` periodically to get the latest features and security fixes.
+    </Info>
+  </Tab>
+
+  <Tab title="WinGet">
+    ```powershell  theme={null}
+    winget install Anthropic.ClaudeCode
+    ```
+
+    <Info>
+      WinGet installations do not auto-update. Run `winget upgrade Anthropic.ClaudeCode` periodically to get the latest features and security fixes.
+    </Info>
   </Tab>
 </Tabs>
 
@@ -48,7 +68,7 @@ claude
 You'll be prompted to log in on first use. That's it! [Continue with Quickstart (5 minutes) →](/en/quickstart)
 
 <Tip>
-  Claude Code automatically keeps itself up to date. See [advanced setup](/en/setup) for installation options, manual updates, or uninstallation instructions. Visit [troubleshooting](/en/troubleshooting) if you hit issues.
+  See [advanced setup](/en/setup) for installation options, manual updates, or uninstallation instructions. Visit [troubleshooting](/en/troubleshooting) if you hit issues.
 </Tip>
 
 ## What Claude Code does for you
@@ -88,6 +108,10 @@ You'll be prompted to log in on first use. That's it! [Continue with Quickstart 
 ## Additional resources
 
 <CardGroup>
+  <Card title="About Claude Code" icon="sparkles" href="https://claude.com/product/claude-code">
+    Learn more about Claude Code on claude.com
+  </Card>
+
   <Card title="Build with the Agent SDK" icon="code-branch" href="https://docs.claude.com/en/docs/agent-sdk/overview">
     Create custom AI agents with the Claude Agent SDK
   </Card>
